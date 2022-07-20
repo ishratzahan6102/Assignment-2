@@ -5,6 +5,7 @@ body{
 }
 
 /* Player section */
+
 .Player-of-the-year{
     max-width: 1100px ;
     background-color: black;
@@ -30,6 +31,7 @@ body{
 }
 .player-image img{
     width: 80%;
+    display: block;
 }
 .player-details a{
     text-decoration: none;
@@ -83,7 +85,6 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-
 }
 .blog{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -119,6 +120,7 @@ body{
 }
 
 /* footer section */
+
 footer{
     margin: 8rem 0 0 0;
     padding-top: 6rem;
@@ -138,6 +140,10 @@ footer{
 .footer-section h1{
     font-size: 2rem;
 }
+.footer-section h1:hover{
+    color: red;
+    transition: .8s;
+}
 .footer-section hr{
     width: 1200px;
     color: gray;
@@ -154,7 +160,31 @@ footer{
     font-size: .9rem;
     color: rgb(211, 211, 211);
 }
+.About-us-section li:hover{
+    color: red;
+    transition: .8s;
+}
+.social-icons{
+    display: flex;
+    width: 150px;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.social-icons a{
+    text-decoration: none;
+}
+.social-icons i{
+    font-size: 1.6rem;
+    color: white;
+}
+.social-icons i:hover{
+    transition: .8s;
+    color: red;
+
+}
+
 /* media query for mobile version */
+
 @media screen and (max-width: 688px){
     .Player-of-the-year{
     grid-template-columns: repeat(1, 1fr);
@@ -167,16 +197,16 @@ footer{
     margin-top: 2rem;
     padding: 1rem 2rem;
     text-align: center;
-   }
+    }
    .player-image{
     margin-top: 1rem;
     margin-left: 2rem;
     text-align: center;
-   }
+    }
    .player-details h1{
     font-size: 1.6rem ;
     margin: 1rem;
-   }
+    }
    .player-details p{
     height: 3rem;
     overflow: hidden;
@@ -185,16 +215,16 @@ footer{
     margin: 0;
     margin-bottom: 3rem;
     font-size: 1rem;
-   }
+    }
    .player-details a{
     font-size: 1rem;
     padding: 1rem 2rem;
     }
    .player-image img{
     width: 80%;
-   }
-   
-    .Sidemenu-and-blogs{
+    margin-left: 2rem;
+    }
+   .Sidemenu-and-blogs{
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -223,9 +253,8 @@ footer{
         margin: 0;
         margin-top: 2rem;
         padding: 0;
-        height: 30rem;
+        height: 34rem;
     }
-
     .About-us-section ul{
         flex-direction: column;
         text-align: center;
@@ -247,8 +276,13 @@ footer{
         width: 90%;
     }
 }
+
 /* media query for tablet version */
+
 @media screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* Player section */
+
     .Player-of-the-year{
         width: 90%;
         margin: 2rem auto;
@@ -259,6 +293,7 @@ footer{
     }
     .player-details h1{
         font-size: 2rem;
+
     }
     .player-details p{
         height: 3rem; 
@@ -271,6 +306,9 @@ footer{
     .player-image img{
         width: 100%;
     }
+
+    /* Sidemenu and blogs */
+
     .Sidemenu-and-blogs{
         width: 90%;
         flex-direction: column;
@@ -300,6 +338,9 @@ footer{
     .no-show{
         display: none;
     }
+    
+    /* footer section */
+
     .footer-section{
         width: 100%;
     }
@@ -317,3 +358,5 @@ footer{
         font-size: 1rem;
     }
 }
+
+    /* End */
