@@ -24,6 +24,25 @@ body{
     font-size: 3rem;
     line-height: 3rem;
 }
+#animation{
+    color: transparent;
+    background-image: linear-gradient(to left, #808080, #996666, #bf4040, #ff0000);
+    -webkit-background-clip:text;
+    animation: animate 3s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+@keyframes animate {
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
 .player-details p{
     font-size: 1rem;
     font-weight: .5rem;
