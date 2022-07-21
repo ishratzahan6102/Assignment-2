@@ -40,6 +40,11 @@ body{
     background-color: red;
     color: white;
 }
+.player-details a:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+}
 
 /* Blogs and side-menu section */
 
@@ -123,11 +128,23 @@ body{
 .blog-info span{
     margin-left: .4rem;
 }
+.no-show-button{
+    display: none;
+    text-align: center;
+    margin: 4rem auto ;
+}
+.no-show-button a {
+    text-decoration: none;
+    padding: .6rem 2rem;
+    border-radius: .2rem;
+    background-color: red;
+    color: white;
+}
 
 /* footer section */
 
 footer{
-    margin: 8rem 0 0 0;
+    margin: 4rem 0 0 0;
     padding-top: 6rem;
     width: 100%;
     height: 300px;
@@ -343,6 +360,9 @@ footer{
     }
     .no-show{
         display: none;
+    }
+    .no-show-button{
+        display: block;
     }
     
     /* footer section */
